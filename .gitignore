@@ -2,3 +2,4 @@
 /.idea
 /vendor
 /npm-debug.log
+/.env

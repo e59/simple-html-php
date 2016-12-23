@@ -8,6 +8,8 @@ Comes with Sass, PHP Plates, Webpack, Bootstrap and Toastr.
 
 Check out `package.json` for commands.
 
+You will need a `.env` file. Just create a copy of `env.example` to get started.
+
 ###License
 
 [MIT License](http://opensource.org/licenses/mit-license.php).

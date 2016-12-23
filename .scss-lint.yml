@@ -1,0 +1,18 @@
+linters:
+  Indentation:
+    width: 4
+  NestingDepth:
+    max_depth: 6
+    ignore_parent_selectors: true
+  SelectorDepth:
+    max_depth: 6
+  VendorPrefix:
+    enabled: false
+  PseudoElement:
+    enabled: false
+  ImportantRule:
+    enabled: false
+  EmptyLineBetweenBlocks:
+    enabled: false
+  SelectorFormat:
+    convention: hyphenated_BEM

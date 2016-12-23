@@ -1,0 +1,27 @@
+{
+    "dependencies": {
+        "bootstrap-sass": "^3.3.7",
+        "jquery": "^3.1.1",
+        "toastr": "^2.1.2"
+    },
+    "devDependencies": {
+        "browser-sync-webpack-plugin": "^1.1.3",
+        "copy-webpack-plugin": "^4.0.1",
+        "css-loader": "^0.26.1",
+        "extract-text-webpack-plugin": "2.0.0-beta.4",
+        "file-loader": "^0.9.0",
+        "node-sass": "^4.1.1",
+        "optimize-css-assets-webpack-plugin": "^1.3.0",
+        "path": "^0.12.7",
+        "rimraf": "^2.5.4",
+        "sass-loader": "^4.1.1",
+        "url-loader": "^0.5.7",
+        "webpack": "^2.2.0-rc.2",
+        "webpack-dev-server": "^2.2.0-rc.0"
+    },
+    "scripts": {
+        "server": "node_modules/.bin/webpack-dev-server --inline",
+        "build": "node_modules/.bin/webpack",
+        "cleanup": "node_modules/.bin/rimraf public/assets"
+    }
+}

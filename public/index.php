@@ -12,7 +12,7 @@ $defaults = [
     'root' => getenv('root') ?: dirname($_SERVER['PHP_SELF']),
 ];
 
-$defaults['appTitle'] = getenv('apptitle') ?: ucfirst(trim(pathinfo($defaults['root'], PATHINFO_DIRNAME), '/'));
+$defaults['appTitle'] = getenv('appTitle') ?: ucfirst(trim(pathinfo($defaults['root'], PATHINFO_DIRNAME), '/'));
 
 $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) use ($defaults) {
     $r->addRoute('GET', '/', function() {});
@@ -38,7 +38,6 @@ switch ($routeInfo[0]) {
         $templates = new League\Plates\Engine(dirname(__DIR__) . DIRECTORY_SEPARATOR . '/src/templates');
         $templates->setFileExtension('phtml');
         $templates->addData($defaults);
-
         $handler = $routeInfo[1];
         $vars = $routeInfo[2];
         if (!$vars) {
